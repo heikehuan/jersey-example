@@ -1,3 +1,3 @@
 # jersey-example
-这是我的一个jersey例子
+这是一个spring-boot平台下的jersey例子
  
