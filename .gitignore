@@ -1,4 +1,10 @@
+/target
+/.mvn
+/.idea
 *.class
+*.iml
+mvnw
+mvnw.cmd
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
