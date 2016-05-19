@@ -42,9 +42,39 @@ public class Demo {
     public JsonView addUser(UserBean userBean) {
         JsonView jsonView = JsonViewFactory.createJsonView();
         try {
+            //TODO insert user
             jsonView.success("add user success");
         } catch (Exception e) {
             jsonView.error("add user error. ", e);
+        }
+        return jsonView;
+    }
+
+    @PUT
+    @Path("/update")
+    @Produces(MediaType.APPLICATION_JSON_VALUE)
+    @Consumes(MediaType.APPLICATION_JSON_VALUE)
+    public JsonView updateUser(UserBean userBean) {
+        JsonView jsonView = JsonViewFactory.createJsonView();
+        try {
+            //TODO update user
+            jsonView.success("update user success");
+        } catch (Exception e) {
+            jsonView.error("update user error. ", e);
+        }
+        return jsonView;
+    }
+
+    @DELETE
+    @Path("/delete")
+    @Produces(MediaType.APPLICATION_JSON_VALUE)
+    public JsonView deleteUser(@QueryParam("userId") String userId) {
+        JsonView jsonView = JsonViewFactory.createJsonView();
+        try {
+            //TODO delete user
+            jsonView.success("delete user success");
+        } catch (Exception e) {
+            jsonView.error("delete user error. ", e);
         }
         return jsonView;
     }
